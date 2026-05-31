@@ -1,3 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-@import "tailwindcss";
+/* @layer theme, base, primereact, components, utilities; */
+/* @import "tailwindcss"; */
+
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    /* Brand */
+    --primary: #0F766E;
+    --primary-light: #14B8A6;
+    --primary-dark: #115E59;
+
+    /* Secondary */
+    --secondary: #2563EB;
+    --secondary-light: #60A5FA;
+
+    /* Backgrounds */
+    --background: #FFFFFF;
+    --background-alt: #F8FAFC;
+    --surface: #FFFFFF;
+
+    /* Text */
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+
+    /* Borders */
+    --border: #E2E8F0;
+
+    /* Status */
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --error: #DC2626;
+
+    /* Accent */
+    --accent: #06B6D4;
+}
+
+.p-button {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.p-button:hover {
+    background: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.p-button.p-button-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(15, 118, 110, 0.3);
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem:not(.p-highlight):not(.p-disabled)>.p-menuitem-content:hover {
+    color: #0e7490;
+    background: #14b8a522;
+}
+
+.p-galleria .p-galleria-indicator button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    border: none !important;
+    padding: 0 !important;
+    transition: all 0.4s ease;
+}
+
+.p-galleria .p-galleria-indicator.p-highlight button {
+    background: rgba(255, 255, 255, 0.85) !important;
+    width: 24px !important;
+    height: 8px !important;
+    border-radius: 4px !important;
+}
+
+.p-galleria .p-galleria-indicator.p-highlight {
+    width: 24px !important;
+    border-radius: 4px !important;
+}
+
+.p-galleria-indicators-bottom .p-galleria-indicators {
+    background: transparent !important;
+    padding: 0.75rem !important;
+}
+
+.p-galleria.p-galleria-indicators-bottom .p-galleria-indicator,
+.p-galleria.p-galleria-indicators-top .p-galleria-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+.p-galleria,
+.p-galleria-content,
+.p-galleria-item-wrapper,
+.p-galleria-item {
+    height: 90vh !important;
+    overflow: hidden !important;
+}
+
+.p-galleria-item {
+    animation: slideIn 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: scale(1.04);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes contentFadeUp {
+    from {
+        opacity: 0;
+        transform: translateX(24px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

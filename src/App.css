@@ -1,44 +1,16 @@
-* {
-    font-family: "Inter", sans-serif;
-}
-
-:root {
-    /* Brand */
-    --primary: #0F766E;
-    --primary-light: #14B8A6;
-    --primary-dark: #115E59;
-
-    /* Secondary */
-    --secondary: #2563EB;
-    --secondary-light: #60A5FA;
-
-    /* Backgrounds */
-    --background: #FFFFFF;
-    --background-alt: #F8FAFC;
-    --surface: #FFFFFF;
-
-    /* Text */
-    --text-primary: #0F172A;
-    --text-secondary: #475569;
-    --text-muted: #94A3B8;
-
-    /* Borders */
-    --border: #E2E8F0;
-
-    /* Status */
-    --success: #16A34A;
-    --warning: #F59E0B;
-    --error: #DC2626;
-
-    /* Accent */
-    --accent: #06B6D4;
-}
-
 /*ANCHOR =========================  UTILITYS  =========================*/
 /* 
     font-family: "Plus Jakarta Sans",sans-serif; 
     font-family: "Inter", sans-serif;
 */
+
+.descText {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    color: var(--background);
+}
 
 /*ANCHOR =========================  NAVBAR  =========================*/
 .customNavbar .p-menubar {
@@ -65,13 +37,14 @@
     inset: 0;
     opacity: 0.9;
     z-index: -1;
+    filter: brightness(0.65);
 }
 
 .HeroText {}
 
 .HeroText h2 {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 2.4rem;
+    font-size: 2.25rem;
     font-weight: 700;
     text-shadow: 0 2px 4px #00000033;
     color: #ffffff;
