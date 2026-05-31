@@ -1,0 +1,98 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    /* Brand */
+    --primary: #0F766E;
+    --primary-light: #14B8A6;
+    --primary-dark: #115E59;
+
+    /* Secondary */
+    --secondary: #2563EB;
+    --secondary-light: #60A5FA;
+
+    /* Backgrounds */
+    --background: #FFFFFF;
+    --background-alt: #F8FAFC;
+    --surface: #FFFFFF;
+
+    /* Text */
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+
+    /* Borders */
+    --border: #E2E8F0;
+
+    /* Status */
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --error: #DC2626;
+
+    /* Accent */
+    --accent: #06B6D4;
+}
+
+/*ANCHOR =========================  UTILITYS  =========================*/
+/* 
+    font-family: "Plus Jakarta Sans",sans-serif; 
+    font-family: "Inter", sans-serif;
+*/
+
+/*ANCHOR =========================  NAVBAR  =========================*/
+.customNavbar .p-menubar {
+    background-color: var(--background-alt);
+}
+
+/*ANCHOR =========================  HOME  =========================*/
+.HomeLandingPage {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem 5%;
+}
+
+.HomeLandingPage::before {
+    content: '';
+    background-image: url("http://srhc.life/wp-content/uploads/2025/12/MG_7971-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.HeroText {}
+
+.HeroText h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px #00000033;
+    color: #ffffff;
+}
+
+/*ANCHOR =========================  ABOUT  =========================*/
+
+/*ANCHOR =========================  SERVICES  =========================*/
+
+/*ANCHOR =========================  TEAM  =========================*/
+
+/*ANCHOR =========================  REVIEWS  =========================*/
+
+/*ANCHOR =========================  CONTACT  =========================*/
+
+/*ANCHOR =========================    =========================*/
+
+/*ANCHOR =========================    =========================*/
+
+/*ANCHOR =========================    =========================*/
+
+/*ANCHOR =========================    =========================*/
+
+/*ANCHOR =========================    =========================*/
