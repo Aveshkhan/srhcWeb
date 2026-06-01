@@ -1,4 +1,9 @@
+import AboutSection from "./AboutSection";
+import FAQSection from "./FaqSection";
+import Footer from "./Footer";
 import HeroCarousel from "./HeroCarousal";
+import HomeServices from "./HomeServices";
+import MarqueeStrip from "./MarqueeStrip";
 import Navbar from "./Navbar";
 // import { Button } from "primereact/button";
 
@@ -28,6 +33,11 @@ function Home() {
         </div>
       </div> */}
       <HeroCarousel />
+      <MarqueeStrip />
+      <AboutSection />
+      <HomeServices />
+      <FAQSection />
+      <Footer />
     </div>
   );
 }

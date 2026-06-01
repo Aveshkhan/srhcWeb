@@ -50,6 +50,176 @@
     color: #ffffff;
 }
 
+.marquee-strip {
+    background: #EFF6FF;
+    border-top: 1px solid #DBEAFE;
+    border-bottom: 1px solid #DBEAFE;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem 0;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 3.5rem;
+    animation: marquee 28s linear infinite;
+}
+
+.marquee-strip:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #1E3A8A;
+    white-space: nowrap;
+}
+
+.marquee-icon {
+    color: #2563EB;
+    font-size: 1rem;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* About Section */
+.about-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0.5rem 0 1rem;
+    line-height: 1.2;
+}
+
+.about-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--background);
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.about-card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.about-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0 0 0.6rem;
+    line-height: 1.3;
+}
+
+.about-card-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0 0 1.25rem;
+    flex: 1;
+}
+
+.about-card-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.about-card-link:hover {
+    color: var(--primary-dark);
+}
+
+/* FAQ Styling */
+.faq-accordion .p-accordion-tab {
+    margin-bottom: 12px;
+}
+
+.faq-accordion .p-accordion-header {
+    border: none !important;
+    background: #f8fafc !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease;
+}
+
+.faq-accordion .p-accordion-header:not(.p-highlight):hover {
+    background: #f0fdfa !important;
+}
+
+.faq-accordion .p-accordion-header.p-highlight {
+    box-shadow: 0 4px 20px rgba(15, 118, 110, 0.1);
+}
+
+.faq-accordion .p-accordion-header.p-highlight .p-accordion-header-text {
+    color: var(--primary);
+}
+
+.faq-accordion .p-accordion-header .p-accordion-header-text {
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 1rem 1.25rem;
+}
+
+.faq-accordion .p-accordion-content {
+    padding: 1.25rem 1.25rem;
+    background: white;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Services & Charges Card */
+.services-dark-section {
+    background: #0F172A;
+}
+
+.service-dark-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    border-radius: 20px;
+    padding: 2rem 1.75rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+}
+
+.service-dark-card:hover {
+    background: rgba(15, 23, 42, 0.9);
+    border-color: var(--primary);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
 /*ANCHOR =========================  ABOUT  =========================*/
 
 /*ANCHOR =========================  SERVICES  =========================*/
@@ -60,7 +230,52 @@
 
 /*ANCHOR =========================  CONTACT  =========================*/
 
-/*ANCHOR =========================    =========================*/
+/*ANCHOR =========================  FOOTER  =========================*/
+/* Footer */
+.footer {
+    background: var(--secondary);
+    color: #CBD5E1;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1E293B;
+}
+
+.footer-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #475569;
+}
+
+.footer-link {
+    color: #94A3B8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #14B8A6;
+}
+
+.footer-social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #1E293B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A3B8;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-social-btn:hover {
+    background: var(--primary);
+    color: #fff;
+}
 
 /*ANCHOR =========================    =========================*/
 
