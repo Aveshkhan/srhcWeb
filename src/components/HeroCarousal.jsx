@@ -10,13 +10,13 @@ const slides = [
       "At Shri Ramdev Healthcare Centre, expert medical care is now just a tap away. Get fast, reliable, and compassionate treatment for you and your family.",
   },
   {
-    image: "https://srhc.life/wp-content/uploads/2025/12/MG_8005-scaled.jpg",
+    image: "http://srhc.life/wp-content/uploads/2025/12/MG_8005-scaled.jpg",
     title: "Expert Doctors, Modern Treatment",
     subtitle:
       "Our experienced team of doctors provides world-class healthcare with a personal touch.",
   },
   {
-    image: "https://srhc.life/wp-content/uploads/2025/12/MG_7965-scaled.jpg",
+    image: "http://srhc.life/wp-content/uploads/2025/12/MG_7965-scaled.jpg",
     title: "Your Health, Our Priority",
     subtitle:
       "Affordable, accessible healthcare for every member of your family — from children to seniors.",

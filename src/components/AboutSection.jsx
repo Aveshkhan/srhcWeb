@@ -1,7 +1,7 @@
 export default function AboutSection() {
   const cards = [
     {
-      image: "https://srhc.life/wp-content/uploads/2025/12/MG_7971-scaled.jpg",
+      image: "http://srhc.life/wp-content/uploads/2025/12/MG_7971-scaled.jpg",
       eyebrow: "About Us",
       title: "Welcome to SRHC — Borivali West",
       description:
@@ -10,7 +10,7 @@ export default function AboutSection() {
       linkLabel: "Learn more",
     },
     {
-      image: "https://srhc.life/wp-content/uploads/2025/12/MG_8005-scaled.jpg",
+      image: "http://srhc.life/wp-content/uploads/2025/12/MG_8005-scaled.jpg",
       eyebrow: "Our Team",
       title: "15+ Specialities Under One Roof",
       description:
@@ -19,7 +19,7 @@ export default function AboutSection() {
       linkLabel: "Explore specialties",
     },
     {
-      image: "https://srhc.life/wp-content/uploads/2025/12/MG_7965-scaled.jpg",
+      image: "http://srhc.life/wp-content/uploads/2025/12/MG_7965-scaled.jpg",
       eyebrow: "Key Services",
       title: "Diagnostics, Pharmacy & Home Care",
       description:

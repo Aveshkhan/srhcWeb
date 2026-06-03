@@ -10,7 +10,7 @@ export default function Footer() {
   ];
 
   const socials = [
-    { icon: "pi-whatsapp", href: "https://wa.me/918591371535" },
+    { icon: "pi-whatsapp", href: "http://wa.me/918591371535" },
     { icon: "pi-envelope", href: "mailto:srhc.0001@gmail.com" },
     { icon: "pi-phone", href: "tel:+918591371535" },
     { icon: "pi-instagram", href: "#" },
@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="https://primefaces.org/cdn/primereact/images/logo.png"
+                src="http://primefaces.org/cdn/primereact/images/logo.png"
                 alt="SRHC"
                 className="rounded-xl object-cover"
                 style={{ width: 48, height: 48 }}
